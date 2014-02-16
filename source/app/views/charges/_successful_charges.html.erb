@@ -1,0 +1,23 @@
+<table class="successful">
+  <thead>
+    <tr>
+      <th>Paid</th>
+      <th>Amount</th>
+      <th>Currency</th>
+      <th>Refunded</th>
+      <th>Customer</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% charges.each do |charge| %>
+      <tr>
+        <td><%= charge.paid %></td>
+        <td><%= charge.amount %></td>
+        <td><%= charge.currency %></td>
+        <td><%= charge.refunded %></td>
+        <td><%= charge.customer_id %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
